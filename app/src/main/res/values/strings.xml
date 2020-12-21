@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">OriginalMarines</string>
+    <string name="products_have_you_seen">Products have you seen</string>
+    <string name="shop_by_look">SHOP BY LOOK</string>
+    <string name="latest_trends">LATEST TRENDS</string>
+    <string name="follow">follow</string>
+    <string name="free_delivery">Free Delivery</string>
+    <string name="collect_in_store">COLLECT IN STORE</string>
+    <string name="secure_payments">Secure Payments</string>
+    <string name="newsletter">Subscribe to the newsletter</string>
+    <string name="online_shopping">Online Shopping</string>
+    <string name="who_we_are">Who We are</string>
+    <string name="legal_information">Legal Information</string>
+    <string name="promo">promo</string>
+    <string name="sign_in">Sign in</string>
+    <!--<string name="exclusive_benfits">The <b>Original Marines</b> loyalty program that offers many exclusive benefits</string>-->
+    <string name="exclusive_benfits">1l programma fedelta` di <b>Original Marines</b> che offre tanti vantaggi esclusivil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

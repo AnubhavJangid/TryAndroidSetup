@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPagerBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_480sdp" />
+
+                <include layout="@layout/app_header_main" />
+
+                <TextView
+                    android:id="@+id/tvPromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_350sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:background="@drawable/promo_button"
+                    android:fontFamily="@font/avenir_black"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:text="@string/promo"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPagerCategories"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_450sdp" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayoutViewPager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/viewPagerCategories"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/appSpaceBottom"
+                    android:background="@android:color/transparent"
+                    app:tabBackground="@drawable/tab_selector"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_roman"
+                android:padding="@dimen/spaceAll"
+                android:text="PRODOTI CHE HAI VISTO"
+                android:textColor="@color/dark_grey" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_9sdp"
+                android:layout_marginBottom="@dimen/appSpaceBottom"
+                android:background="@color/grey" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerProducts"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_315sdp"
+                android:layout_margin="@dimen/_5sdp" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayoutViewPagerProd"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:background="@android:color/transparent"
+                app:tabBackground="@drawable/tab_selector_gray"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_500sdp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPagerLook"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_500sdp" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayoutViewPagerLook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/viewPagerLook"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@android:color/transparent"
+                    app:tabBackground="@drawable/tab_selector"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/avenir_roman"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:text="PARTECIPA AL PROGRAMMA"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeMedium" />
+
+                <ImageView
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/appSpaceBottom"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_myoriginal_logo"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/appSpaceBottom"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_myoriginal_logo"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/spaceAll"
+                    android:layout_marginBottom="@dimen/appSpaceBottom"
+                    android:fontFamily="@font/avenir_roman"
+                    android:gravity="center_horizontal"
+                    android:text="@string/exclusive_benfits"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/appSpaceLeft"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/appSpaceRight"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:background="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_11sdp"
+                    android:text="REGISTRATI"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/textSizeMedium" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:padding="@dimen/spaceAll"
+                android:text="ULTIME TENDENZE"
+                android:textColor="@color/med_grey" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_9sdp"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivAppIcon"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/color_icon"
+                    app:civ_border_color="@color/red"
+                    app:civ_border_width="1dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@id/ivAppIcon"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/app_name"
+                    android:textColor="@color/med_grey"
+                    android:textSize="@dimen/textSizeMedium"
+                    app:drawableRightCompat="@drawable/ic_instagram_follow" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spaceAll"
+                android:background="@color/blue"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_11sdp"
+                android:text="@string/follow"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSizeMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/light_grey"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_free_shipping" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_black"
+                        android:gravity="center"
+                        android:padding="@dimen/spaceAll"
+                        android:text="CONSEGNA\nGRATUITA"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_store" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_black"
+                        android:gravity="center"
+                        android:padding="@dimen/spaceAll"
+                        android:text="RITIRA IN\nNEGOZIO"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/appSpaceLeft"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_secured" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_black"
+                        android:gravity="center"
+                        android:padding="@dimen/spaceAll"
+                        android:text="PAGAMENTI\nSICURI"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/avenir_roman"
+                    android:text="ISCRIVITI ALLA NEWSLETTER"
+                    android:textColor="@color/med_grey"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:button="@drawable/tag_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@color/med_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/avenir_roman"
+                    android:text="ACQUISTI ONLINE"
+                    android:textColor="@color/med_grey"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:button="@drawable/tag_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@color/med_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/avenir_roman"
+                    android:text="CHI SIAMO"
+                    android:textColor="@color/med_grey"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:button="@drawable/tag_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@color/med_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/avenir_roman"
+                    android:text="INFORMAZIONLE LEGALE"
+                    android:textColor="@color/med_grey"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:button="@drawable/tag_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@color/med_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/avenir_roman"
+                    android:text="CONTATTACI"
+                    android:textColor="@color/med_grey"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:button="@drawable/tag_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@color/med_grey" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/ivInstagram"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_instagram" />
+
+                <ImageView
+                    android:id="@+id/ivYouTube"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toEndOf="@id/ivInstagram"
+                    android:src="@drawable/ic_youtube" />
+
+                <ImageView
+                    android:id="@+id/ivFacebook"
+                    android:layout_width="@dimen/_19sdp"
+                    android:layout_height="@dimen/_19sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toEndOf="@id/ivYouTube"
+                    android:src="@drawable/ic_facebook" />
+
+                <ImageView
+                    android:id="@+id/ivTwitter"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toEndOf="@id/ivFacebook"
+                    android:src="@drawable/ic_twitter" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/avenir_roman"
+                    android:padding="@dimen/spaceAll"
+                    android:text="2020 ORIGINAL MARINES"
+                    android:textColor="@color/med_grey"
+                    android:textSize="@dimen/textSizeSmall"
+                    app:drawableLeftCompat="@drawable/ic_copyright" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

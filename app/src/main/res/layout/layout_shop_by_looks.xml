@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivLooksImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_500sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/look_image"/>
+
+    <TextView
+        android:id="@+id/tvProdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACQUISTA PER LOOK"
+        android:paddingBottom="@dimen/appSpaceBottom"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:paddingTop="@dimen/appSpaceTop"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/textSizeMedium"
+        android:fontFamily="@font/avenir_medium"
+        android:textColor="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"
+        android:layout_below="@id/tvProdName"
+        android:layout_marginStart="@dimen/_5sdp"/>
+
+</RelativeLayout>

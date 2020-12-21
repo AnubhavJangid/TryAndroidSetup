@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OriginalMarines</string>
+    <string name="products_have_you_seen">PRODOTI CHE HAI VISTO</string>
+    <string name="shop_by_look">ACQUISTA PER LOOK</string>
+    <string name="latest_trends">ULTIME TENDENZE</string>
+    <string name="follow">follow</string>
+    <string name="free_delivery">CONSEGNA\nGRATUITA</string>
+    <string name="collect_in_store">RITIRA IN\nNEGOZIO</string>
+    <string name="secure_payments">PAGAMENTI\nSICURI</string>
+    <string name="newsletter">SUBSCRIBE TO THE NEWSLETTER</string>
+    <string name="online_shopping">ACQUISTI ONLINE</string>
+    <string name="who_we_are">CHI SIAMO</string>
+    <string name="legal_information">INFORMAZIONLE LEGALE</string>
+    <string name="promo">promo</string>
+    <string name="sign_in">REGISTRATI</string>
+    <string name="exclusive_benfits">1l programma fedelta` di <b>Original Marines</b> che offre tanti vantaggi esclusivil</string>
+</resources>

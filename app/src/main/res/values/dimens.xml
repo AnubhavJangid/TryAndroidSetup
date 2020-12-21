@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="nav_drawer_width">@dimen/_260sdp</dimen>
+    <dimen name="textSizeSmall">@dimen/_11sdp</dimen>
+    <dimen name="textSizeMedium">@dimen/_13sdp</dimen>
+    <dimen name="textSizeLarge">@dimen/_15sdp</dimen>
+
+    <dimen name="menuIconWidth">@dimen/_15sdp</dimen>
+    <dimen name="menuIconHeight">@dimen/_15sdp</dimen>
+
+    <dimen name="appSpaceLeft">@dimen/_10sdp</dimen>
+    <dimen name="appSpaceRight">@dimen/_10sdp</dimen>
+    <dimen name="appSpaceTop">@dimen/_10sdp</dimen>
+    <dimen name="appSpaceBottom">@dimen/_10sdp</dimen>
+    <dimen name="spaceAll">@dimen/_10sdp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

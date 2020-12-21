@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/ivCategoryDrawer"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_hamburger"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/appSpaceLeft"
+        android:src="@drawable/ic_search"
+        android:layout_toEndOf="@id/ivCategoryDrawer"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Original\nMarines"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/textSizeMedium"
+        android:drawablePadding="@dimen/_5sdp"
+        app:drawableStartCompat="@drawable/ic_hamburger"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/ivShoppingBag"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/appSpaceLeft"
+        android:src="@drawable/ic_shopping_bag"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/appSpaceLeft"
+        android:src="@drawable/ic_user"
+        android:layout_toStartOf="@id/ivShoppingBag"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+</RelativeLayout>
